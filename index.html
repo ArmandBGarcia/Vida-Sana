@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vida Sana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" alt="logotipo" width="100px" />
+      <a href="#">Inicio</a>
+      <a href="#mision">Mision</a>
+      <a href="#vision">Visión</a>
+      <a href="#form">Contacto</a>
+    </nav>
+    <article>
+      <h1 id="title">Vida Sana</h1>
+      <h3 id="subtitle">Acerca de la empresa</h3>
+      <div id="about">
+        <img src="images/pan zanahoria.jpg" alt="pan" width="200px" />
+        <div>
+          <p align="justify" id="intro" class="about">
+            La empresa Vida Sana surge de la idea de explotar una receta de pan
+            artesanal que ninguna cadena productora de pan dulce posee. Gracias
+            a esto y al auge de personas veganas o el crecimiento del mundo
+            fitness es que decidimos sacar un pan vegano hecho a base de
+            zanahoria, nuez y leche de coco.
+          </p>
+          <br />
+          <p align="justify" id="intro">
+            Queremos dar a conocer al publico la deliciosa receta de pan vegano.
+            Sabemos que podemos incursionar en un mercado ya bastante abarrotado
+            de todo tipo de versiones, sabores, marcas, etc., y aun así tener
+            exito ya que les estaremos presentando una textura nueva con un
+            sabor y aroma unicos.
+          </p>
+        </div>
+      </div>
+    </article>
+    <article>
+      <h3 id="subtitle2">Misión</h3>
+      <p align="center" id="intro" class="mision">
+        Nuestra mision es poder llegar a cada uno de los hogares de las
+        personas, que prueben nuestro producto y lo vuelvan parte de su rutina
+        de alimentacion diaria. Estar en cada tiendita de la esquina, en cada
+        mesa por la mañana. Que nuestro producto sea facil de adquirir.
+      </p>
+    </article>
+    <br />
+    <article>
+      <h3 align="center" id="subtitle2">Visión</h3>
+      <p align="center" id="intro" class="vision">
+        Crear convenios con Cadenas Comerciales como OXXO, Waltmart, Bodega
+        Aurrera, Soriana, Comercial Mexicana, entre otros. Ser un producto
+        reconocido a nivel nacional y defendido por nuestros clientes.
+      </p>
+    </article>
+    <br />
+    <article>
+      <h3 align="center" id="subtitle2">Valores</h3>
+      <ul>
+        <li>Honestidad</li>
+        <li>Igualdad</li>
+        <li>Transparencia</li>
+        <li>Empatia</li>
+        <li>Amabilidad</li>
+        <li>Responsabilidad</li>
+      </ul>
+    </article>
+    <img class="logo" src="images/logo.png" alt="logo" width="500px" />
+    <div class="container-contact">
+      <img src="images/armando03.png" alt="" />
+      <div class="contact-form">
+        <h4 id="subtitle2">Contacto</h4>
+        <form class="form-group" id="form">
+          <input type="text" placeholder="Name" name="name" class="input" />
+          <input type="email" placeholder="Email" class="input" name="email" />
+          <textarea
+            name="message"
+            placeholder="Place your message here..."
+          ></textarea>
+          <button type="submit" class="btn-submit">Send message</button>
+        </form>
+        <a href="mailto:xdarcx@hotmail.es" id="trucazo">mail</a>
+      </div>
+    </div>
+    <div class="redes">
+      <li>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      </li>
+      <li>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      </li>
+    </div>
+    <footer>
+      <p>Armando B. Garcia &copy;</p>
+    </footer>
+    <script>
+      const $form = document.querySelector("#form");
+      const $buttonMailto = document.querySelector("#trucazo");
+      $form.addEventListener("submit", handleSubmit);
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        console.log(form.get("name"));
+        $buttonMailto.setAttribute(
+          "href",
+          `mailto:xdarcx@hotmail.es?subject=name: ${form.get(
+            "name"
+          )}, mail: ${form.get("email")}&body=${form.get("message")}`
+        );
+        $buttonMailto.click();
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4fce3;
+  font-family: sans-serif;
+  width: 1000px;
+  height: 2030px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #a9e34b;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a:link {
+  text-decoration: none;
+  color: #2b8a3e;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+a:visited {
+  color: #2b8a3e;
+}
+
+article {
+  margin-top: 20px;
+}
+
+#about {
+  display: flex;
+  gap: 30px;
+}
+
+#title {
+  text-align: center;
+  color: #2b8a3e;
+  font-size: 30px;
+}
+
+#subtitle,
+#subtitle2 {
+  color: #2b8a3e;
+}
+
+#subtitle2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#intro {
+  font-size: 18px;
+  color: #2b8a3e;
+}
+
+footer {
+  background-color: #a9e34b;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.logo {
+  margin-left: 25%;
+  margin-top: 50px;
+}
+
+.container-contact {
+  margin: 0 auto;
+  margin-top: 1em;
+  border: #2b8a3e solid 1px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #2b8a3e;
+}
+
+#trucazo {
+  opacity: 0;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 2;
+  color: #2b8a3e;
+}
+
+.redes {
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.redes li a:link {
+  font-size: 50px;
+}
